@@ -1,0 +1,22 @@
+{
+    "name": "portfoliobymarie/portfoliobymarie",
+    "description": "Portfolio website of Marie Keely",
+    "license": "proprietary",
+    "require-dev": {
+        "swiftmailer/swiftmailer": "~5.3",
+        "phpmailer/phpmailer":     "~5.2"
+    },
+    "authors": [
+        {
+            "name":  "Marie Keely",
+            "email": "info@portfoliobymarie.com"
+        },
+        {
+            "name":  "Luke Watts",
+            "email": "watts.luke@yahoo.com" 
+        }
+    ],
+    "autoload": {
+                "classmap": ["app/libs/"]
+            }
+}

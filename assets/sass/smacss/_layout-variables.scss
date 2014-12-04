@@ -1,0 +1,67 @@
+// ===================
+// ===[ VARIABLES ]===
+// ===================
+$header-height: 80px;
+$main-width: 74em;
+$main-margin: 80px;
+$gutter-width: 20px;
+$footer-height: 250px;
+$widget-width: 100px;
+@function widget-width($overall-width, $n) {
+  $c: 100 / $n;
+  $w: $overall-width * $c;
+  $r:  $w / 100000;
+  @return percentage($r);
+}
+
+@mixin square($n) {
+  height: $n + px;
+  width: $n + px;
+}
+
+
+$full: 100%;
+$one-half: $full / 2; // 50%
+$one-quarter: $full / 4; // 25%
+$three-quarters: $one-quarter * 3; // 75%
+$one-third: $full / 3; // 33.33333%
+$two-thirds: $one-third * 2; // 66.66667%
+$one-fifth: $full / 5; // 20%
+$two-fifths: $one-fifth * 2; // 40%
+$three-fifths: $one-fifth * 3; // 60%
+$four-fifths: $one-fifth * 4; // 80%
+$one-sixth: $full / 6; // 16.66667%
+$two-sixths: $one-third; // 33.33333%
+$three-sixths: $one-half; // 50%
+$four-sixths: $two-thirds; // 66.66667%
+$five-sixths: $one-sixth * 5; // 83.33333%
+$one-seventh: $full / 7; // 14.28571%
+$two-sevenths: $one-seventh * 2; // 28.57143%;
+$three-sevenths: $one-seventh * 3; // 42.85714%;
+$four-sevenths: $one-seventh * 4; // 57.14286%;
+$five-sevenths: $one-seventh * 5; // 71.42857%;
+$six-sevenths: $one-seventh * 6; // 85.71429%;
+$one-eight: $full / 8; // 12.5%
+$two-eights: $one-quarter; // 25%
+$three-eights: $one-eight * 3; // 37.5%
+$four-eights: $one-half; // 50%
+$five-eights: $one-eight * 5; // 62.5%
+$six-eights: $three-quarters; // 75%
+$seven-eights: $one-eight * 7; // 87.5%
+$one-ninth: $full / 9; // 11.11111%
+$two-ninths: $one-ninth * 2; // 22.22222%
+$three-ninths: $one-third; // 33.33333%
+$four-ninths: $one-ninth * 4; // 44.44444%
+$five-ninths: $one-ninth * 5; // 55.55555%
+$six-ninths: $one-ninth * 6; // 66.66666%
+$seven-ninths: $one-ninth * 7; // 77.77777%
+$eight-ninths: $one-ninth * 8; // 88.88888%
+$one-tenth: $full / 10; // 10%
+$two-tenths: $one-tenth * 2; // 20%
+$three-tenths: $one-tenth * 3; // 30%
+$four-tenths: $one-tenth * 4; // 40%
+$five-tenths: $one-tenth * 5; // 50%
+$six-tenths: $one-tenth * 6; // 60%
+$seven-tenths: $one-tenth * 7; // 70%
+$eight-tenths: $one-tenth * 8; // 80%
+$nine-tenths: $one-tenth * 9; // 90%

@@ -1,0 +1,73 @@
+/**
+ * Author: Luke Watts
+ * Author URL: http://www.luke-watts.com
+ * Uses: Sass and Compass Framework
+ */
+
+/* =========[ TABLE OF CONTENTS ]=========
+ * ---------------------------------------
+ * 01. [ LAYOUT ]
+ *    01.01. [ BODY ]
+ *    01.02. [ FORM RESETS ]
+ *    01.03. [ HEADER ]
+ *    01.04. [ LEFT LOGO ]
+ *    01.05. [ RIGHT LOGO AREA ]
+ *    01.06. [ NAV ]
+ *    01.07. [ SOCIAL ICONS ]
+ *    01.08. [ MAIN CONTENT ]
+ *    01.09. [ HOME ]
+ *    01.10. [ SLIDER ]
+ *    01.11. [ ABOUT ]
+ *    01.12. [ PORTFOLIO ]
+ *    01.13. [ NEWS ]
+ *    01.14. [ CONTACT ]
+ * 	  01.15. [ SUBFOOTER ]
+ *    01.15. [ FOOTER ]
+ * ----------------------------------------
+ * 02. [ STATES ]
+ *    02.01. [ FORMS ]
+ *    02.02. [ NAV ]
+ *    02.03. [ SOCIAL ICONS ]
+ *    02.04. [ NEWS ]
+ * ----------------------------------------
+ *    02.05. [ MEDIA QUERIES 720PX-979PX ]
+ *      02.05.01. [ RIGHT LOGO AREA ]
+ *      02.05.02. [ HOME ]
+ *      02.05.03. [ SLIDER ]
+ *      02.05.04. [ ABOUT ]
+ *      02.05.05. [ FOOTER ]
+ *    02.06. [ MEDIA QUERIES 980PX-1120PX ]
+ *      02.06.01. [ RIGHT LOGO AREA ]
+ *      02.06.02. [ HOME ]
+ *      02.06.03. [ SLIDER ]
+ *      02.06.04. [ ABOUT ]
+ *      02.06.05. [ FOOTER ]
+ *    02.07. [ 1120PX-1340PX ]
+ *      02.07.01. [ RIGHT LOGO AREA ]
+ *      02.07.02. [ HOME ]
+ *      02.07.03. [ SLIDER ]
+ *      02.07.04. [ ABOUT ]
+ *      02.07.05. [ FOOTER ]
+ * ----------------------------------------
+ * 03. [ THEME ]
+ *    03.01. [ FONT FACE ]
+ *    03.02. [ FORMS ]
+ *    03.03. [ HEADER ]
+ *    03.04. [ RIGHT LOGO AREA ]
+ *    03.05. [ NAV ]
+ *    03.06. [ MAIN CONTENT ]
+ *    03.07. [ HOME ]
+ *    03.08. [ ABOUT ]
+ *    03.09. [ PORTFOLIO ]
+ *    03.10. [ CONTACT ]
+ *    03.11. [ NEWS ]
+ *    03.12/ [ SUBFOOTER ]
+ *    03.13. [ FOOTER ]
+ */
+@import "smacss/base";
+
+@import "smacss/layout";
+
+@import "smacss/states";
+
+@import "smacss/theme";

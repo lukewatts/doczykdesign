@@ -1,0 +1,32 @@
+// =========================
+// ===[ THEME VARIABLES ]===
+// =========================
+
+// ===[ COLORS ]===
+$old-body-bg: #495048;
+$body-bg: #2d3429;
+$black: #000000;
+$white: #ffffff;
+$quiet-color: lighten($font-color, 20%); // #666666
+$loud-color: darken($font-color, 13.33%); // #111111
+$primary-color: #58a445; // Light Green
+$secondary-color: #4b8e41; // Dark Green
+$tertiary-color: #c16c29; // Orange
+$thumbs-color: #eaeaea;
+$darker-thumbs: darken($thumbs-color, 15%);
+
+// ===[ FONTS ]===
+$font-color: #333;
+$alt-text-color: #6f6f6f; // Or THE DEVIL'S COLOR!!!! (#666)
+$accent-text-color: #999;
+$sans-family: "Helvetica Neue", helvetica, arial, sans-serif;
+$serif-family: "Times New Roman", serif;
+
+// ===[ FONT SIZES ]===
+$tiny-font: 10px;
+$small-font: 12px;
+$medium-font: 14px;
+$large-font: 16px;
+
+// ===[ LINE HEIGHT ]===
+$line-height: 20px;
