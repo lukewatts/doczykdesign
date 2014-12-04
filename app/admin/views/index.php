@@ -1026,7 +1026,8 @@
                   </li>
                   <li>
                     <a href="<?php echo $site_url; ?>" target="_blank">
-                      <i class="fa fa-eye"></i>Page</a>
+                      <i class="fa fa-eye"></i>
+                      View Page</a>
                   </li>
                 </ul>
               </li>
