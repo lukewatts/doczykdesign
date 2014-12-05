@@ -5221,8 +5221,7 @@ li.news-article.row {
 
 	.thumbs {
 	  @include square(52);
-    
-    // TODO: Remove once Foundations block-grid is working
+
     vertical-align: baseline;
     
 	} // .subfooter .widget .thumbs

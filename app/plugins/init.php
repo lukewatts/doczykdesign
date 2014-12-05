@@ -1,5 +1,5 @@
 <?php
-
+// TODO: Fix for php <5.3.2
 require_once( $path['app'] . '/libs/Plugin.php' );
 
 /*

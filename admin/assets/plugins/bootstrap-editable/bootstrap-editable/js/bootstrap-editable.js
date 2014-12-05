@@ -31,7 +31,6 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
             this.input = this.options.input;
             
             //set initial value
-            //todo: may be add check: typeof str === 'string' ? 
             this.value = this.input.str2value(this.options.value); 
         },
         initTemplate: function() {
@@ -923,7 +922,6 @@ Applied as jQuery method.
                 $(document).on('keyup.editable', function (e) {
                     if (e.which === 27) {
                         $('.editable-open').editableContainer('hide');
-                        //todo: return focus on element 
                     }
                 });
 
@@ -1046,10 +1044,7 @@ Applied as jQuery method.
                     $('#username').on('shown', function(e, editable) {
                         editable.input.$input.val('overwriting value of input..');
                     });                     
-                    **/                      
-                    /*
-                     TODO: added second param mainly to distinguish from bootstrap's shown event. It's a hotfix that will be solved in future versions via namespaced events.  
-                    */
+                    **/
                     this.$element.triggerHandler('shown', $(this.options.scope).data('editable')); 
                 }, this) 
             })
@@ -1084,7 +1079,6 @@ Applied as jQuery method.
             
             //if form already exist - delete previous data 
             if(this.$form) {
-                //todo: destroy prev data!
                 //this.$form.destroy();
             }
 
@@ -4233,8 +4227,7 @@ $(function(){
             this.$widget.remove();
             this.$element.removeData('combodate').show();
         }
-        
-        //todo: clear method        
+
     };
 
     $.fn.combodate = function ( option ) {

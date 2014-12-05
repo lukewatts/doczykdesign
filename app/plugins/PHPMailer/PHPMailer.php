@@ -1,10 +1,12 @@
 <?php
 
+// TODO: Fix for php <5.3.2
 $errorHandler = new ErrorHandler;
 $mail = new PHPMailer();
 
 if ( !empty( $_POST ) ) {
 
+  // TODO: Fix for php <5.3.2
   $validator = new Validator($errorHandler);
 
   $validator->rules = array(

@@ -607,7 +607,6 @@ class Swift_Signers_DKIMSigner implements Swift_Signers_HeaderSigner
                         }
                     } else {
                         // Wooops Error
-                        // todo handle it but should never happen
                     }
                     break;
                 case " " :

@@ -558,7 +558,6 @@
       // there probably is no current time offset since they seem to explicitly turn off the offset
       // when someone stops observing DST.
       //
-      // FIXME if this is not the case and we'll walk all the way back (ugh).
       //
       //Step 5:  Sort the rules by effective date.
       //Step 6:  Apply the most recent rule before the current time.
@@ -710,7 +709,6 @@
         if (rule) {
           repl = rule[7] === '-' ? '' : rule[7];
         }
-        //FIXME: Right now just falling back to Standard --
         // apparently ought to use the last valid rule,
         // although in practice that always ought to be Standard
         else {

@@ -297,7 +297,6 @@
 									} else {
 										// type == 'POST' || 'GET' || 'DELETE'
 										if ( s.async === false ) {
-											// TODO: Blocking delay
 											process();
 										} else {
 											this.responseTimer = setTimeout(process, m.responseTime || 50);

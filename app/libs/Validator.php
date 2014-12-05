@@ -72,7 +72,7 @@ class Validator {
         
         // Dynamically call the necessary method based on the $law name
         if ( !call_user_func_array( array( $this, $law ), array( $field, $item['value'], $satisfier ) ) ) {
-
+          // TODO: Fix for php <5.3.2
           $this->errorHandler->addError(  str_replace( [':field', ':satisfier'], [$field, $satisfier], $this->error_messages[$law] ), $field );
 
         }

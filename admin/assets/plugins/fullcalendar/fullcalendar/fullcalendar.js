@@ -162,7 +162,7 @@ $.fn.fullCalendar = function(options) {
 	this.each(function(i, _element) {
 		var element = $(_element);
 		var calendar = new Calendar(element, options, eventSources);
-		element.data('fullCalendar', calendar); // TODO: look into memory leak implications
+		element.data('fullCalendar', calendar);
 		calendar.render();
 	});
 	
@@ -318,7 +318,7 @@ function Calendar(element, options, eventSources) {
 	/* View Rendering
 	-----------------------------------------------------------------------------*/
 	
-	// TODO: improve view switching (still weird transition in IE, and FF has whiteout problem)
+
 	
 	function changeView(newViewName) {
 		if (!currentView || newViewName != currentView.name) {
@@ -457,7 +457,7 @@ function Calendar(element, options, eventSources) {
 	}
 	
 	
-	function setSize(dateChanged) { // todo: dateChanged?
+	function setSize(dateChanged) {
 		ignoreWindowResize++;
 		currentView.setHeight(suggestedViewHeight, dateChanged);
 		if (absoluteViewElement) {
@@ -925,7 +925,6 @@ function EventManager(options, _sources) {
 					if (source.eventDataTransform) {
 						events = $.map(events, source.eventDataTransform);
 					}
-					// TODO: this technique is not ideal for static array event sources.
 					//  For arrays, we'll want to process all events right in the beginning, then never again.
 				
 					for (var i=0; i<events.length; i++) {
@@ -1204,7 +1203,6 @@ function EventManager(options, _sources) {
 		}else{
 			event.className = [];
 		}
-		// TODO: if there is no start date, return false to indicate an invalid event
 	}
 	
 	
@@ -1215,7 +1213,6 @@ function EventManager(options, _sources) {
 	
 	function normalizeSource(source) {
 		if (source.className) {
-			// TODO: repeat code, same code for event classNames
 			if (typeof source.className == 'string') {
 				source.className = source.className.split(/\s+/);
 			}
@@ -1398,14 +1395,12 @@ function parseDate(s, ignoreTimezone) { // ignoreTimezone defaults to true
 		}
 		return parseISO8601(s, ignoreTimezone) || (s ? new Date(s) : null);
 	}
-	// TODO: never return invalid dates (like from new Date(<string>)), return null instead
 	return null;
 }
 
 
 function parseISO8601(s, ignoreTimezone) { // ignoreTimezone defaults to false
 	// derived from http://delete.me.uk/2005/03/iso8601.html
-	// TODO: for a know glitch/feature, read tests/issue_206_parseDate_dst.html
 	var m = s.match(/^([0-9]{4})(-([0-9]{2})(-([0-9]{2})([T ]([0-9]{2}):([0-9]{2})(:([0-9]{2})(\.([0-9]+))?)?(Z|(([-+])([0-9]{2})(:?([0-9]{2}))?))?)?)?)?$/);
 	if (!m) {
 		return null;
@@ -1481,8 +1476,6 @@ function parseTime(s) { // returns minutes since start of day
 
 /* Date Formatting
 -----------------------------------------------------------------------------*/
-// TODO: use same function formatDate(date, [date2], format, [options])
-
 
 function formatDate(date, format, options) {
 	return formatDates(date, null, format, options);
@@ -1846,10 +1839,6 @@ function setMinHeight(element, height) {
 -----------------------------------------------------------------------------*/
 
 
-//TODO: arraySlice
-//TODO: isFunction, grep ?
-
-
 function noop() { }
 
 
@@ -1931,7 +1920,6 @@ function markFirstLast(e) {
 function setDayID(cell, date) {
 	cell.each(function(i, _cell) {
 		_cell.className = _cell.className.replace(/^fc-\w*/, 'fc-' + dayIDs[date.getDay()]);
-		// TODO: make a way that doesn't rely on order of classes
 	});
 }
 
@@ -2103,8 +2091,6 @@ function BasicWeekView(element, calendar) {
 
 fcViews.basicDay = BasicDayView;
 
-//TODO: when calendar's date starts out on a weekend, shouldn't happen
-
 
 function BasicDayView(element, calendar) {
 	var t = this;
@@ -2259,7 +2245,6 @@ function BasicView(element, calendar, viewName) {
 		tm = opt('theme') ? 'ui' : 'fc';
 		colFormat = opt('columnFormat');
 
-		// week # options. (TODO: bad, logic also in other views)
 		showWeekNumbers = opt('weekNumbers');
 		weekNumberTitle = opt('weekNumberTitle');
 		if (opt('weekNumberCalculation') != 'iso') {
@@ -2287,7 +2272,7 @@ function BasicView(element, calendar, viewName) {
 		var contentClass = tm + "-widget-content";
 		var month = t.start.getMonth();
 		var today = clearTime(new Date());
-		var cellDate; // not to be confused with local function. TODO: better names
+		var cellDate;
 		var cellClasses;
 		var cell;
 
@@ -2659,8 +2644,6 @@ function BasicView(element, calendar, viewName) {
 
 	// makes sure height doesn't collapse while we destroy/render new cells
 	// (this causes a bad end-user scrollbar jump)
-	// TODO: generalize this for all view rendering. (also in Calendar.js)
-
 	function lockHeight() {
 		setMinHeight(element, element.height());
 	}
@@ -2920,11 +2903,6 @@ setDefaults({
 	maxTime: 24
 });
 
-
-// TODO: make it work in quirks mode (event corners, all-day height)
-// TODO: test liquid width, especially in IE6
-
-
 function AgendaView(element, calendar, viewName) {
 	var t = this;
 	
@@ -3010,7 +2988,7 @@ function AgendaView(element, calendar, viewName) {
 	var axisWidth;
 	var colWidth;
 	var gutterWidth;
-	var slotHeight; // TODO: what if slotHeight changes? (see issue 650)
+	var slotHeight;
 
 	var snapMinutes;
 	var snapRatio; // ratio of number of "selection" slots to normal slots. (ex: 1, 2, 4)
@@ -3071,7 +3049,6 @@ function AgendaView(element, calendar, viewName) {
 		maxMinute = parseTime(opt('maxTime'));
 		colFormat = opt('columnFormat');
 
-		// week # options. (TODO: bad, logic also in other views)
 		showWeekNumbers = opt('weekNumbers');
 		weekNumberTitle = opt('weekNumberTitle');
 		if (opt('weekNumberCalculation') != 'iso') {
@@ -3383,7 +3360,7 @@ function AgendaView(element, calendar, viewName) {
 		if (!opt('selectable')) { // if selectable, SelectionManager will worry about dayClick
 			var col = Math.min(colCnt-1, Math.floor((ev.pageX - dayTable.offset().left - axisWidth) / colWidth));
 			var date = colDate(col);
-			var rowMatch = this.parentNode.className.match(/fc-slot(\d+)/); // TODO: maybe use data
+			var rowMatch = this.parentNode.className.match(/fc-slot(\d+)/);
 			if (rowMatch) {
 				var mins = parseInt(rowMatch[1]) * opt('slotMinutes');
 				var hours = Math.floor(mins/60);
@@ -3783,7 +3760,7 @@ function AgendaEventRenderer() {
 	var colContentLeft = t.colContentLeft;
 	var colContentRight = t.colContentRight;
 	var renderDaySegs = t.renderDaySegs;
-	var resizableDayEvent = t.resizableDayEvent; // TODO: streamline binding architecture
+	var resizableDayEvent = t.resizableDayEvent;
 	var getColCnt = t.getColCnt;
 	var getColWidth = t.getColWidth;
 	var getSnapHeight = t.getSnapHeight;
@@ -3934,7 +3911,7 @@ function AgendaEventRenderer() {
 			forward = seg.forward || 0;
 			leftmost = colContentLeft(colI*dis + dit);
 			availWidth = colContentRight(colI*dis + dit) - leftmost;
-			availWidth = Math.min(availWidth-6, availWidth*.95); // TODO: move this to CSS
+			availWidth = Math.min(availWidth-6, availWidth*.95);
 			if (levelI) {
 				// indented and thin
 				outerWidth = availWidth / (levelI + forward + 1);
@@ -4014,7 +3991,7 @@ function AgendaEventRenderer() {
 				eventElement[0].style.height = height + 'px';
 				event = seg.event;
 				if (seg.contentTop !== undefined && height - seg.contentTop < 10) {
-					// not enough room for title, put it in the time (TODO: maybe make both display:inline instead)
+
 					eventElement.find('div.fc-event-time')
 						.text(formatDate(event.start, opt('timeFormat')) + ' - ' + event.title);
 					eventElement.find('div.fc-event-title')
@@ -4514,8 +4491,7 @@ function View(element, calendar, viewName) {
 					trigger('eventMouseout', this, event, ev);
 				}
 			);
-		// TODO: don't fire eventMouseover/eventMouseout *while* dragging is occuring (on subject element)
-		// TODO: same for resizing
+
 	}
 	
 	
@@ -4557,7 +4533,6 @@ function View(element, calendar, viewName) {
 			minuteDelta,
 			allDay,
 			function() {
-				// TODO: investigate cases where this inverse technique might not work
 				moveEvents(eventsByID[eventId], -dayDelta, -minuteDelta, oldAllDay);
 				reportEventChange(eventId);
 			},
@@ -4578,7 +4553,6 @@ function View(element, calendar, viewName) {
 			dayDelta,
 			minuteDelta,
 			function() {
-				// TODO: investigate cases where this inverse technique might not work
 				elongateEvents(eventsByID[eventId], -dayDelta, -minuteDelta);
 				reportEventChange(eventId);
 			},
@@ -4654,7 +4628,7 @@ function DayEventRenderer() {
 	var dateCell = t.dateCell;
 	var compileDaySegs = t.compileDaySegs;
 	var getDaySegmentContainer = t.getDaySegmentContainer;
-	var bindDaySeg = t.bindDaySeg; //TODO: streamline this
+	var bindDaySeg = t.bindDaySeg;
 	var formatDates = t.calendar.formatDates;
 	var renderDayOverlay = t.renderDayOverlay;
 	var clearOverlays = t.clearOverlays;
@@ -5002,10 +4976,9 @@ function DayEventRenderer() {
 	function resizableDayEvent(event, element, seg) {
 		var rtl = opt('isRTL');
 		var direction = rtl ? 'w' : 'e';
-		var handle = element.find('.ui-resizable-' + direction); // TODO: stop using this class because we aren't using jqui for this
+		var handle = element.find('.ui-resizable-' + direction);
 		var isResizing = false;
-		
-		// TODO: look into using jquery-ui mouse widget for this stuff
+
 		disableTextSelection(element); // prevent native <a> selection for IE
 		element
 			.mousedown(function(ev) { // prevent native <a> selection for others
@@ -5174,7 +5147,7 @@ function SelectionManager() {
 			unselect(ev);
 			var _mousedownElement = this;
 			var dates;
-			hoverListener.start(function(cell, origCell) { // TODO: maybe put cellDate/cellIsAllDay info in cell
+			hoverListener.start(function(cell, origCell) {
 				clearSelection();
 				if (cell && cellIsAllDay(cell)) {
 					dates = [ cellDate(origCell), cellDate(cell) ].sort(cmp);

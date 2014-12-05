@@ -229,7 +229,6 @@ window.flux = {
 			// Should we setup a pagination view?
 			if(this.options.pagination)
 			{
-				// TODO: Attach to touch events if appropriate
 				this.pagination = $('<ul class="pagination"></ul>').css({
 					margin: '0px',
 					padding: '0px',

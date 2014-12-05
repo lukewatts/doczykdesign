@@ -1,8 +1,5 @@
 <?php
 
-/**
- * @todo
- */
 class Swift_Signers_OpenDKIMSignerTest extends \SwiftMailerTestCase
 {
     public function setUp()

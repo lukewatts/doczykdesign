@@ -1,7 +1,7 @@
 <?php
 
 class MixItUp extends Plugin {
-  
+  // TODO: Fix for php <5.3.2
   public $portfolio_items = [];
   public $effect;
   public $view;

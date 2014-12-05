@@ -1,5 +1,5 @@
 <?php
-
+// TODO: Update for Doczyk Design
 $mail_settings = array(
   'mailer'    => 'PHPMailer', // Which mailer you wish to use ( 'PHPMailer', 'SwiftMailer' ).
   'transport' => 'mail',      // Set the method of sending email ( 'mail', 'sendmail', 'smtp' )

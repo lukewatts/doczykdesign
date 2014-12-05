@@ -1,6 +1,7 @@
 <?php
 
 class ErrorHandler {
+  // TODO: Fix for php <5.3.2
   protected $errors = [];
   
 
@@ -46,6 +47,7 @@ class ErrorHandler {
    * @since 1.0.0
    */
   public function all( $key = null ) {
+    // TODO: Fix for php <5.3.2
     return isset( $this->errors[$key] ) ? $this->errors[$key] : $this->errors;
   }
 
@@ -59,6 +61,7 @@ class ErrorHandler {
    * @since 1.0.0
    */
   public function first( $key ) {
+    // TODO: Fix for php <5.3.2
     return isset( $this->all()[$key][0] ) ? $this->all()[$key][0] : '' ;
   }
 

@@ -23,6 +23,7 @@ $site['url'] = ( $site['url'] == '' ) ? get_base_url(true) : $site['url'];
 // If debug mode is true turn on errors and warnings
 if ( $debug_mode == true ) ini_set('display_errors', 1);
 
+// TODO: Set php version check and implement PHP <5.3.2 safe alternatives to autoloading
 require_once( $path['base'] . '/vendor' . '/autoload.php' );
 
 $url = new HTTP();
