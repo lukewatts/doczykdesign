@@ -3,8 +3,8 @@
     <!-- MAIN CONTENT -->
     <article class="row">
       <div class="news columns small-12 large-8 pad-top pad-left">
-        
-        <img src="http://doczykdesign.dev/assets/img/news-header.png" alt="News Header Logo" class="show-for-small">
+
+        <?php $html->img( 'img/news-header.png', 'News Header Logo', array( 'class' => 'show-for-small' ) ); ?>
         
         <ul>
           <!-- NEWS POST #2 -->
@@ -18,7 +18,7 @@
             </div><!-- .news-thumb.left -->
             
             <h4 class="news-title">
-              <a href="http://doczykdesign.dev/assets/files/2013/09/1-s2.0-S1359644613001700-main.pdf" title="Read Article" target="_blank">Engineering in vitro microenvironments for cell based therapies and drug discovery</a>
+              <a href="<?php echo $site['url']; ?>assets/files/2013/09/1-s2.0-S1359644613001700-main.pdf" title="Read Article" target="_blank">Engineering in vitro microenvironments for cell based therapies and drug discovery</a>
             </h4>
             
             <p class="news-meta">Posted on <em>September 11, 2013</em></p>
@@ -29,14 +29,14 @@
               </p>
             </div><!-- .news-content -->
             
-            <a href="http://doczykdesign.dev/assets/files/2013/09/1-s2.0-S1359644613001700-main.pdf" title="Read Article" target="_blank"><span class="read-more right">Read More >></span></a>
+            <a href="<?php echo $site['url']; ?>assets/files/2013/09/1-s2.0-S1359644613001700-main.pdf" title="Read Article" target="_blank"><span class="read-more right">Read More >></span></a>
           </li>
           
           <!-- NEWS POST #1 -->
           <li class="news-article row">
             <div class="news-thumb left">
               <a href="http://pubs.acs.org/action/showLargeCover?jcode=acncdm&vol=4&issue=4&" title="Read Article" target="_blank">
-                <img src="http://doczykdesign.dev/assets/img/news/acncdm-thumb.png" alt="" />
+                <?php $html->img( 'img/news/acncdm-thumb.png','ACS Chemical Neuroscience Cover Image' ); ?>
               </a>
             </div><!-- .news-thumb -->
             
@@ -60,7 +60,7 @@
       
       <!-- SIDEBAR -->
       <aside class="news-sidebar columns small-12 large-4 justify pad-right">
-          <img src="http://doczykdesign.dev/assets/img/news-header.png" alt="News Header Logo" class="hide-for-small">
+        <?php $html->img( 'img/news-header.png', 'News Header Logo', array( 'class' => 'hide-for-small' ) ); ?>
         <p>Here is where Doczyk Design would like to share their achievements. 
           Images we've had published, interesting projects we've been involved in and anything which has been interesting or inspiring to us. 
           Among other features here you'll find one of Doczyk Designs images which was published in a highly respected scientific magazine ACS Chemical Neuroscience.</p>

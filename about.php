@@ -7,7 +7,7 @@
 
         <!-- ABOUT CONTENT -->
         <div class="about-content columns small-12 large-7">
-          <img src="http://doczykdesign.dev/assets/img/about-header.png" alt="About Me Logo" class="about-me-logo right">
+          <?php $html->img( 'img/about-header.png', 'About Me Logo', array( 'class' => 'about-me-logo right' ) ); ?>
           <p>
             My name is Maciek, and I am a Graphic Designer, a native of Poland but based in Galway, Ireland.
           </p>

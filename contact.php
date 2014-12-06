@@ -5,7 +5,7 @@
       
       <div class="row inner">
         <!-- CONTACT IMAGE -->
-        <img src="http://doczykdesign.dev/assets/img/contact-img.jpg" alt="Portfolio Header Image" class="contact-img show-for-small pad-top">
+        <?php $html->img( 'img/contact-img.jpg', 'Portfolio Header Image', array( 'class' => 'contact-img show-for-small pad-top' ) ); ?>
         
         <!-- CONTACT FORM -->
         <div class="contact-form columns small-12 large-5 pad-left">
@@ -41,7 +41,7 @@
         <aside class="contact-sidebar columns small-12 large-6 large-offset-1 pad-right">
           
           <!-- CONTACT IMAGE -->
-          <img src="http://doczykdesign.dev/assets/img/contact-img.jpg" alt="Portfolio Header Image" class="contact-img hide-for-small right">
+          <?php $html->img( 'img/contact-img.jpg', 'Portfolio Header Image', array( 'class' => 'contact-img hide-for-small right' ) ); ?>
           
           <p class="text-justify">
             If you wish to contact me then you're in the right place. 
