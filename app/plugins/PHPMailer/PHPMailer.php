@@ -1,13 +1,14 @@
 <?php
 
-// TODO: Fix for php <5.3.2
 $errorHandler = new ErrorHandler;
+
+// For php < 5.3.2
+if ( !defined( 'PHPMailer' ) ) require_once( $path['base'] . '/vendor/phpmailer/phpmailer/PHPMailerAutoload.php' );
 $mail = new PHPMailer();
 
 if ( !empty( $_POST ) ) {
 
-  // TODO: Fix for php <5.3.2
-  $validator = new Validator($errorHandler);
+  $validator = new Validator( $errorHandler );
 
   $validator->rules = array(
     'name' => array(

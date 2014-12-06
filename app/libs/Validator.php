@@ -72,8 +72,7 @@ class Validator {
         
         // Dynamically call the necessary method based on the $law name
         if ( !call_user_func_array( array( $this, $law ), array( $field, $item['value'], $satisfier ) ) ) {
-          // TODO: Fix for php <5.3.2
-          $this->errorHandler->addError(  str_replace( [':field', ':satisfier'], [$field, $satisfier], $this->error_messages[$law] ), $field );
+          $this->errorHandler->addError(  str_replace( array( ':field', ':satisfier' ), array( $field, $satisfier ), $this->error_messages[$law] ), $field );
 
         }
      
@@ -84,11 +83,11 @@ class Validator {
   }
 
 
-  protected function required( $filed, $value, $satisfier ) {
+  protected function required( $field, $value, $satisfier ) {
 
     // Won't work on php < 5.5 ...stupid php!
     // return !empty( trim( $value ) );
-    
+
     $trimmed_value = trim( $value );
 
     return !empty($trimmed_value);

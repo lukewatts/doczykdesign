@@ -1,8 +1,8 @@
 <?php
 
 class ErrorHandler {
-  // TODO: Fix for php <5.3.2
-  protected $errors = [];
+
+  protected $errors = array();
   
 
   /**
@@ -47,8 +47,17 @@ class ErrorHandler {
    * @since 1.0.0
    */
   public function all( $key = null ) {
-    // TODO: Fix for php <5.3.2
-    return isset( $this->errors[$key] ) ? $this->errors[$key] : $this->errors;
+
+    if ( PHP_VERSION < '5.3.2' ) {
+      $errors_key = $this->errors[$key];
+
+      return isset( $errors_key ) ? $this->errors[$key] : $this->errors;
+    }
+    else {
+      // If a key is present in the ErrorHandler::errors array return that, otherwise return the entire array
+      return isset( $this->errors[$key] ) ? $this->errors[$key] : $this->errors;
+    }
+
   }
 
 
@@ -61,8 +70,17 @@ class ErrorHandler {
    * @since 1.0.0
    */
   public function first( $key ) {
-    // TODO: Fix for php <5.3.2
-    return isset( $this->all()[$key][0] ) ? $this->all()[$key][0] : '' ;
+
+    if ( PHP_VERSION < '5.3.2' ) {
+      $all = $this->all();
+      $all_key = $all[$key][0];
+
+      return isset( $all_key ) ? $all_key : '' ;
+    }
+    else {
+      return isset( $this->all()[$key][0] ) ? $this->all()[$key][0] : '' ;
+    }
+
   }
 
 }

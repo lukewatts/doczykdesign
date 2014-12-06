@@ -5,8 +5,13 @@
  * @author  Luke Watts <luke@luke-watts.com>
  * @author  Affinity4 <info@affinity4.ie>
  * @link    http://affinity4.ie/
- * @version 1.1.0
+ * @version 1.2.0
  */
+
+/**
+ * @since 1.2.0
+ */
+define( 'PHP_VER', phpversion() );
 
 // Setup paths for use through application
 require_once( 'paths.php' );
@@ -23,8 +28,21 @@ $site['url'] = ( $site['url'] == '' ) ? get_base_url(true) : $site['url'];
 // If debug mode is true turn on errors and warnings
 if ( $debug_mode == true ) ini_set('display_errors', 1);
 
-// TODO: Set php version check and implement PHP <5.3.2 safe alternatives to autoloading
-require_once( $path['base'] . '/vendor' . '/autoload.php' );
+/**
+ * @since 1.2.0
+ */
+if ( PHP_VER < '5.3.2' ) {
+  // TODO: Use spl_autoloader which was added in php 5.1.2
+  require_once( $path['app'] . '/libs/HTTP.php' );
+  require_once( $path['app'] . '/libs/HTML.php' );
+  require_once( $path['app'] . '/libs/Helpers.php' );
+  require_once( $path['app'] . '/libs/Meta.php' );
+  require_once( $path['app'] . '/libs/ErrorHandler.php' );
+  require_once( $path['app'] . '/libs/Validator.php' );
+}
+else {
+  require_once( $path['base'] . '/vendor' . '/autoload.php' );
+}
 
 $url = new HTTP();
 $html = new HTML();
