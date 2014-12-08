@@ -129,7 +129,7 @@ $mixitup->portfolio_items = array(
     'src'       => 'img/portfolio/1.jpg',
     'alt'       => 'CBB Logo',
     'category'  => 'logos'
-  ),      
+  ),
 );
 
 $mixitup->portfolio();
