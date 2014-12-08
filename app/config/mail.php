@@ -6,6 +6,6 @@ $mail_settings = array(
   'host'      => 'mail.gmail.com', // If using smtp transport you will need to provide a host
   'username'  => '',          // If using smtp transport you will need to provide a username
   'password'  => '',          // If using smtp transport you will need to provide a password
-  'recipient' => 'marie@portfoliobymarie.com', // Default recipient if none is provided i.e. contact form)
-  'subject'   => 'Contact Form - Portfolio by Marie' // Default subject if none is provided i.e. contact form)
+  'recipient' => 'watts.luke@yahoo.com', // Default recipient if none is provided i.e. contact form)
+  'subject'   => 'Contact Form - Doczyk Design' // Default subject if none is provided i.e. contact form)
 );

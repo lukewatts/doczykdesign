@@ -1,6 +1,6 @@
 <?php
 
-$debug_mode = false;  // Turn this to true to enable php errors on production servers
+$debug_mode = true;  // Turn this to true to enable php errors on production servers
 
 /*
  * Used to create fill in hte <title> tag as well as other <meta> tags.

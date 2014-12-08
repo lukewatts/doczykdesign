@@ -48,15 +48,10 @@ class ErrorHandler {
    */
   public function all( $key = null ) {
 
-    if ( PHP_VERSION < '5.3.2' ) {
+      // If a key is present in the ErrorHandler::errors array return that, otherwise return the entire array
       $errors_key = $this->errors[$key];
 
       return isset( $errors_key ) ? $this->errors[$key] : $this->errors;
-    }
-    else {
-      // If a key is present in the ErrorHandler::errors array return that, otherwise return the entire array
-      return isset( $this->errors[$key] ) ? $this->errors[$key] : $this->errors;
-    }
 
   }
 
@@ -71,15 +66,10 @@ class ErrorHandler {
    */
   public function first( $key ) {
 
-    if ( PHP_VERSION < '5.3.2' ) {
-      $all = $this->all();
-      $all_key = $all[$key][0];
+    $all = $this->all();
+    $all_key = $all[$key][0];
 
-      return isset( $all_key ) ? $all_key : '' ;
-    }
-    else {
-      return isset( $this->all()[$key][0] ) ? $this->all()[$key][0] : '' ;
-    }
+    return isset( $all_key ) ? $all_key : '' ;
 
   }
 

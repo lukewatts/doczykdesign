@@ -23,7 +23,7 @@ class App {
     }
 
     // Dynamically require in the controller file or require the default...
-    require_once( $path['app'] . '/admin/controllers/' . $this->controller . '.php' );
+    require_once( $path['app'] . '/admin/controllers/' . ucfirst( $this->controller ) . '.php' );
 
     // Create a new object of the required controller class...
     $this->controller = new $this->controller;
@@ -42,7 +42,7 @@ class App {
 
     }
     // Rebase the App::$params array.. 
-    $this->params = $url ? array_values( $url ) : [];
+    $this->params = $url ? array_values( $url ) : array();
 
     // And FINALLY, after all checking is done we actually call the App::method
     // specified in App::controller with any App:params
