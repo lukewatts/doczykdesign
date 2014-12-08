@@ -130,6 +130,55 @@ $mixitup->portfolio_items = array(
     'alt'       => 'CBB Logo',
     'category'  => 'logos'
   ),
+//  array(
+//      'name'      => 'Plakat Portugalski',
+//      'src'       => 'img/portfolio/plakat-portugalski-842x1191.jpg',
+//      'alt'       => 'Plakat Portugalski',
+//      'category'  => 'posters'
+//  ),
+//  array(
+//      'name'      => 'Okładka Na Tomik',
+//      'src'       => 'img/portfolio/okladka-na-tomik-ver4-680x482.jpg',
+//      'alt'       => 'Okładka Na Tomik',
+//      'category'  => 'publications'
+//  ),
+    array(
+        'name'      => 'Knocknacarra National School',
+        'src'       => 'img/portfolio/knocknacarra-educate-together-national-school-logo-english-550x400.jpg',
+        'alt'       => 'Knocknacarra Educate Together National School Logo',
+        'category'  => 'logos'
+    ),
+    array(
+        'name'      => 'Presentation B',
+        'src'       => 'img/portfolio/presentation-b-550x494.jpg',
+        'alt'       => 'Presentation B',
+        'category'  => 'infographics'
+    ),
+    array(
+        'name'      => 'Musculoskeletal V3',
+        'src'       => 'img/portfolio/musculoskeletal-3-550x642.jpg',
+        'alt'       => 'Musculoskeletal Version 3 Infographic',
+        'category'  => 'infographics'
+    ),
+  //  array(
+//      'name'      => 'Medical Devices Week Poster',
+//      'src'       => 'img/portfolio/medical-devices-week-poster-with-colour-2-550x778.jpg',
+//      'alt'       => 'Medical Devices Week Poster with Colour 2',
+//      'category'  => 'posters'
+//  ),
+    array(
+        'name'      => 'Insuline Production Device V5',
+        'src'       => 'img/portfolio/insuline-production-device-5-550x702.jpg',
+        'alt'       => 'Insuline Production Device V5',
+        'category'  => 'infographics'
+    ),
+    array(
+        'name'      => 'Human Brain Diagram',
+        'src'       => 'img/portfolio/human-brain-image-one-550x453.jpg',
+        'alt'       => 'Human Brain Diagram',
+        'category'  => 'infographics'
+    ),
+
 );
 
 $mixitup->portfolio();
