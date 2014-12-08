@@ -178,7 +178,12 @@ $mixitup->portfolio_items = array(
         'alt'       => 'Human Brain Diagram',
         'category'  => 'infographics'
     ),
-
+    array(
+        'name'      => 'Heart Diagram',
+        'src'       => 'img/portfolio/heart-diagram-550x420.jpg',
+        'alt'       => 'Heart Diagram',
+        'category'  => 'infographics'
+    ),
 );
 
 $mixitup->portfolio();

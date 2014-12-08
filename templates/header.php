@@ -112,6 +112,9 @@
           },
           selectors: {
             pagersWrapper: '.pagination'
+          },
+          load: {
+            sort: 'default:desc'
           }
         });
         
