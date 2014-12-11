@@ -160,7 +160,7 @@ $mixitup->portfolio_items = array(
         'alt'       => 'Musculoskeletal Version 3 Infographic',
         'category'  => 'infographics'
     ),
-  //  array(
+//  array(
 //      'name'      => 'Medical Devices Week Poster',
 //      'src'       => 'img/portfolio/medical-devices-week-poster-with-colour-2-550x778.jpg',
 //      'alt'       => 'Medical Devices Week Poster with Colour 2',
@@ -184,6 +184,13 @@ $mixitup->portfolio_items = array(
         'alt'       => 'Heart Diagram',
         'category'  => 'infographics'
     ),
+    array(
+        'name'      => 'Healing Process',
+        'src'       => 'img/portfolio/healing-process-3-together-832x400.jpg',
+        'alt'       => 'Healing Process Infographic',
+        'category'  => 'infographics'
+    ),
+
 );
 
 $mixitup->portfolio();
