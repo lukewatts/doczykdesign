@@ -47,11 +47,13 @@ class ErrorHandler {
    * @since 1.0.0
    */
   public function all( $key = null ) {
+      // Prevent undefined index error...
+      if (isset($key)) $errors_key = $this->errors[$key];
+
 
       // If a key is present in the ErrorHandler::errors array return that, otherwise return the entire array
-      $errors_key = $this->errors[$key];
-
-      return isset( $errors_key ) ? $this->errors[$key] : $this->errors;
+      $result = isset( $errors_key ) ? $this->errors[$key] : $this->errors;
+      return $result;
 
   }
 

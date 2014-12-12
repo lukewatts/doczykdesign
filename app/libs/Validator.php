@@ -90,7 +90,7 @@ class Validator {
 
     $trimmed_value = trim( $value );
 
-    return !empty($trimmed_value);
+    return !empty( $trimmed_value );
 
   }
 

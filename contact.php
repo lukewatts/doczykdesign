@@ -9,26 +9,37 @@
         
         <!-- CONTACT FORM -->
         <div class="contact-form columns small-12 large-5 pad-left">
-          
-            <form action="" method="post">
+
+<?php if ( !empty( $_POST ) && !empty( $form_output ) ) : ?>
+  <div data-alert class="alert-box <?php echo $class; ?>"> <?php echo $form_output; ?>
+    <a href="#" class="close">&times;</a>
+  </div>
+<?php endif; ?>
+
+          <?php  if ( !empty( $_POST ) ) print_r( $_POST ); ?>
+
+            <form action="<?php echo str_replace( '.php', '', $_SERVER['SCRIPT_NAME']); ?>" method="post">
               
               <p>
-                <label for="name">Name</label>
-                <input type="text" id="name" name>
-                <?php // On Error
-                // <small class="error"></small> ?>
+                <label <?php if ( !empty( $validation_errors['name'] ) ) echo 'class="error" '; ?>for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <?php if ( !empty( $validation_errors['name']) ) : ?>
+                  <small class="error"><?php echo $validation_errors['name']; ?> </small>
+                <?php endif; ?>
               </p>
               <p>
-                <label for="email">E-Mail</label>
+                <label <?php if ( !empty( $validation_errors['email'] ) ) echo 'class="error" '; ?>for="email">E-Mail</label>
                 <input type="text" id="email" name="email">
-                <?php // On Error
-                // <small class="error"></small> ?>
+                <?php if ( !empty( $validation_errors['email']) ) : ?>
+                  <small class="error"><?php echo $validation_errors['email']; ?> </small>
+                <?php endif; ?>
               </p>
               <p>
-                <label for="message">Message</label>
+                <label <?php if ( !empty( $validation_errors['email'] ) ) echo 'class="error" '; ?>for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" row="6"></textarea>
-                <?php // On Error
-                // <small class="error"></small> ?>
+                <?php if ( !empty( $validation_errors['message']) ) : ?>
+                  <small class="error"><?php echo $validation_errors['message']; ?> </small>
+                <?php endif; ?>
               </p>
               <p class="right">
                 <button type="submit" name="submit">SEND</button>

@@ -6,7 +6,7 @@ $errorHandler = new ErrorHandler;
 if ( !defined( 'PHPMailer' ) ) require_once( $path['base'] . '/vendor/phpmailer/phpmailer/PHPMailerAutoload.php' );
 $mail = new PHPMailer();
 
-if ( !empty( $_POST ) ) {
+if ( !empty( $_POST['name'] ) || !empty( $_POST['email'] ) || !empty( $_POST['message'] ) ) {
 
   $validator = new Validator( $errorHandler );
 
@@ -22,7 +22,7 @@ if ( !empty( $_POST ) ) {
         'maxlength' => 255,
         'email' => true
       ),
-    'comment' => array(
+    'message' => array(
         'required' => true,
         'minlength' => 6
       ),
@@ -46,13 +46,13 @@ if ( !empty( $_POST ) ) {
     $mail->SMTPPassword = $mail_settings['password'];
   }
 
-  $mail->AddAddress( $mail_settings['recipient'], "Marie Keely" );
+  $mail->AddAddress( $mail_settings['recipient'], $site['author'] );
   $mail->Subject    = $mail_settings['subject'];
   $mail->FromName   = $_POST['name'];
   $mail->From       = $_POST['email'];
   $mail->AddReplyTo( $_POST['email'], $mail->FromName );
   $mail->SetFrom( $_POST['email'], $_POST['name'] );
-  $mail->Body       = $_POST['comment'];
+  $mail->Body       = $_POST['message'];
 
   $validation = $validator->check( $_POST );
 
@@ -61,10 +61,10 @@ if ( !empty( $_POST ) ) {
     $validation_errors = array(
       'name'    => $validation->errors()->first( 'name' ),
       'email'   => $validation->errors()->first( 'email' ),
-      'comment' => $validation->errors()->first( 'comment' )
+      'message' => $validation->errors()->first( 'message' )
     );
 
-    $class = 'error';
+    $class = 'alert';
     $form_output = '';
   }
   elseif ( !$mail->Send() ) {
@@ -74,7 +74,7 @@ if ( !empty( $_POST ) ) {
       'body'  => $mail->ErrorInfo
     );
 
-    $class = 'error';
+    $class = 'alert';
     $format = '<h4>%s</h4>' . PHP_EOL . '<p>%s</p>';
     $form_output = sprintf( $format, $message['title'], $message['body'] );
 
