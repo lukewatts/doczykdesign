@@ -37,7 +37,7 @@
 <?php endif; ?>
 
     <!-- Main -->
-    <?php $html->css( 'css/screen.css' ); ?>
+    <?php $html->css( 'css/style.min.css' ); ?>
 
 <?php if ( $url->is_page( 'portfolio' ) && in_array( 'MixItUp', $active_plugins ) ) : ?>
     <!-- STYLES FOR EFFECTS -->

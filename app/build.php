@@ -5,7 +5,7 @@
  * @author  Luke Watts <luke@luke-watts.com>
  * @author  Affinity4 <info@affinity4.ie>
  * @link    http://affinity4.ie/
- * @version 1.2.0
+ * @version 2.0
  */
 
 /**
@@ -33,6 +33,7 @@ if ( $debug_mode == true ) ini_set('display_errors', 1);
  */
 if ( PHP_VER < '5.3.2' ) {
   // TODO: Use spl_autoloader which was added in php 5.1.2
+  require_once( $path['app'] . '/libs/FileHandler.php' );
   require_once( $path['app'] . '/libs/HTTP.php' );
   require_once( $path['app'] . '/libs/HTML.php' );
   require_once( $path['app'] . '/libs/Helpers.php' );
