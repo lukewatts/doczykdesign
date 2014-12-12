@@ -6,7 +6,7 @@ $errorHandler = new ErrorHandler;
 if ( !defined( 'PHPMailer' ) ) require_once( $path['base'] . '/vendor/phpmailer/phpmailer/PHPMailerAutoload.php' );
 $mail = new PHPMailer();
 
-if ( !empty( $_POST['name'] ) || !empty( $_POST['email'] ) || !empty( $_POST['message'] ) ) {
+if ( !empty( $_POST ) ) {
 
   $validator = new Validator( $errorHandler );
 
@@ -75,7 +75,7 @@ if ( !empty( $_POST['name'] ) || !empty( $_POST['email'] ) || !empty( $_POST['me
     );
 
     $class = 'alert';
-    $format = '<h4>%s</h4>' . PHP_EOL . '<p>%s</p>';
+    $format = '<h4 style="color:white;">%s</h4>' . PHP_EOL . '%s';
     $form_output = sprintf( $format, $message['title'], $message['body'] );
 
   }
@@ -87,9 +87,8 @@ if ( !empty( $_POST['name'] ) || !empty( $_POST['email'] ) || !empty( $_POST['me
     );
 
     $class = 'success';
-    $format = '<h4>%s</h4>' . PHP_EOL . '<p>%s</p>';
+    $format = '<h4 style="color:white">%s</h4>' . PHP_EOL . '%s';
     $form_output = sprintf( $format, $message['title'], $message['body'] );
 
   }
 }
-

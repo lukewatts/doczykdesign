@@ -9475,13 +9475,8 @@ sans-serif;
     margin-left: 20%;
   }
 
-  [class*="-sidebar"] {
-    margin-top: 2rem;
-  }
-
   .gallery-container,
-.news,
-  .contact-sidebar,
+  .news,
   .contact-form {
     margin-top: 1rem;
   }

@@ -16,8 +16,6 @@
   </div>
 <?php endif; ?>
 
-          <?php  if ( !empty( $_POST ) ) print_r( $_POST ); ?>
-
             <form action="<?php echo str_replace( '.php', '', $_SERVER['SCRIPT_NAME']); ?>" method="post">
               
               <p>

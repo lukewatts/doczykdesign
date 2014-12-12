@@ -133,8 +133,11 @@
       }); // end ready
     </script>
 
-<?php if ( $url->is_page( 'portfolio' ) && in_array( 'MixItUp', $active_plugins ) ) : ?>
     <style>
+      .social-icons h4 {
+        transition: 200ms all ease-out 0ms;
+      }
+<?php if ( $url->is_page( 'portfolio' ) && in_array( 'MixItUp', $active_plugins ) ) : ?>
       ul.pagination {
         margin-left: 1em;
       }
@@ -178,9 +181,8 @@
       ul.pagination li.disabled span:focus {
         background: none repeat scroll 0 0 hsla(0, 0%, 0%, 0);
       }
-
-    </style>
 <?php endif; ?>
+    </style>
 
   </head>
 
