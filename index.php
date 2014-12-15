@@ -6,9 +6,7 @@
       <div class="slider-container columns small-12 large-7 pad-left hide-for-mobile">
       
 <?php
-if ( in_array( 'FluxSlider', $active_plugins ) ) {
-  require_once( 'templates/FluxSlider/home.php' );
-}
+$plugin->insert( 'FluxSlider', 'home' );
 ?>
       
       </div><!-- .columns.small-12.large-8 -->

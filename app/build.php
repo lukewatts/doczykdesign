@@ -5,7 +5,7 @@
  * @author  Luke Watts <luke@luke-watts.com>
  * @author  Affinity4 <info@affinity4.ie>
  * @link    http://affinity4.ie/
- * @version 2.0
+ * @version 2.1.0
  */
 
 /**
