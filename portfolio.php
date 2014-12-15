@@ -8,23 +8,20 @@
       <!-- GALLERY -->
       <div style="padding-bottom:20px" class="gallery-container columns small-12 large-8">
 
-<?php
-if ( in_array( 'MixItUp', $active_plugins ) ) {
-  require_once( 'templates/MixItUp/portfolio.php' );
-}
-?>
+<?php $plugin->insert( 'MixItUp', 'portfolio' ); ?>
 
       </div><!-- .gallery-container -->
 
       <!-- SIDEBAR -->
       <aside class="portfolio-sidebar columns small-12 large-4 justify pad-right">
         <?php $html->img( 'img/portfolio-header.png', 'Portfolio Header Image', array( 'class' => 'portfolio-img hide-for-small' ) );  ?>
-        <p<?php echo ( in_array( 'MixItUp', $active_plugins ) ) ? ' class="hide"' : ''; ?>>
+
+        <p<?php echo ( $plugin->isActive( 'MixItUp' ) ) ? ' class="hide"' : ''; ?>>
           If you got here you may want to check my portfolio and see if you'll find something interesting.
           You can choose in my artworks, logos, business cards, scientific illustrations, website layouts, flyers and info graphics.
           Enjoy!
         </p>
-    </aside>
+      </aside>
       
     </article>
 

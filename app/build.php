@@ -39,6 +39,7 @@ if ( PHP_VER < '5.3.2' ) {
   require_once( $path['app'] . '/libs/HTML.php' );
   require_once( $path['app'] . '/libs/Helpers.php' );
   require_once( $path['app'] . '/libs/Meta.php' );
+  require_once( $path['app'] . '/libs/Plugin.php' );
   require_once( $path['app'] . '/libs/ErrorHandler.php' );
   require_once( $path['app'] . '/libs/Validator.php' );
 }
@@ -51,6 +52,7 @@ $url = new HTTP();
 $html = new HTML();
 $helper = new Helper();
 $meta = new Meta( $url );
+$plugin = new Plugin();
 
 if ( $url->is_page( 'contact' ) ) {
 

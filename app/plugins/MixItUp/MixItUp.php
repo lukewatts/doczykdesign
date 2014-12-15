@@ -133,6 +133,12 @@ class MixItUp extends Plugin {
           '<dd>' . PHP_EOL .
             '<a href="#infographics" class="filter" data-filter=".infographics">Infographics</a>' . PHP_EOL .
           '</dd>' . PHP_EOL .
+          '<dd>' . PHP_EOL .
+          '<a href="#posters" class="filter" data-filter=".posters">Posters</a>' . PHP_EOL .
+          '</dd>' . PHP_EOL .
+          '<dd>' . PHP_EOL .
+          '<a href="#publications" class="filter" data-filter=".publications">Publications</a>' . PHP_EOL .
+          '</dd>' . PHP_EOL .
         '</dl>' . PHP_EOL .
         PHP_EOL .
         '<!-- PAGINATION -->' . PHP_EOL .

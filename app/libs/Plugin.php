@@ -10,7 +10,6 @@ class Plugin {
   protected $active_plugins;
   protected $plugin;
   protected $page;
-  protected $url;
 
   public function __construct() {
     $this->setActivePlugins();

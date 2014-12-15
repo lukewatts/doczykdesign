@@ -7,6 +7,7 @@ if ( !class_exists( 'Plugin' ) ) {
   $plugin = new Plugin();
 }
 
+
 /*
  * Retrieves the array of active plugins from the app/config.php global variable $active_plugins
  */
