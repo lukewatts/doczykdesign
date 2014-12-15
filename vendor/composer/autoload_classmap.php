@@ -6,13 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Environment' => $baseDir . '/app/libs/Environment.php',
     'ErrorHandler' => $baseDir . '/app/libs/ErrorHandler.php',
+    'FileHandler' => $baseDir . '/app/libs/FileHandler.php',
     'HTML' => $baseDir . '/app/libs/HTML.php',
     'HTTP' => $baseDir . '/app/libs/HTTP.php',
     'Helper' => $baseDir . '/app/libs/Helpers.php',
     'Meta' => $baseDir . '/app/libs/Meta.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
+    'Plugin' => $baseDir . '/app/libs/Plugin.php',
     'SMTP' => $vendorDir . '/phpmailer/phpmailer/class.smtp.php',
     'Validator' => $baseDir . '/app/libs/Validator.php',
     'phpmailerException' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',

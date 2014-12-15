@@ -6298,27 +6298,27 @@ sizingMethod='scale')
 }
 
 header {
-  height: 80px;
+  height: 100px;
   width: 100%
 }
 
 /* DEPRECATED (2014-12-04) #logo{height:80px;float:left}#logo img{height:80px}#doczyk{width:20%;float:right}#doczyk img{height:40px;margin-top:20px;position:absolute;right:20.6%}*/
 #design {
   float: right;
-  height: 80px;
-  width: 20%
+  height: 100px;
+  width: 400px;
 }
 
 #design img {
   height: auto;
-  width: 160px;
+  width: 220px;
   margin-top: 15px;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 nav {
   height: 40px;
-  width: 100%
+  width: 100%;
 }
 
 nav ul {
@@ -6326,7 +6326,7 @@ nav ul {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
-  margin-left: 100px
+  margin-left: 100px;
 }
 
 nav ul li {
@@ -6339,7 +6339,7 @@ nav ul li {
   height: 40px;
   position: relative;
   top: -45px;
-  margin-right: 11.5%;
+  margin-right: 240px;
   margin-left: 0;
   transition: 0ms all 75ms ease-in-out;
 }
@@ -6717,13 +6717,13 @@ ol.sitemap li ol li {
 
 footer {
   height: 40px;
-  width: 100%
+  width: 100%;
 }
 
 footer section {
   float: right;
   height: 100%;
-  width: 20%
+  width: 400px;
 }
 
 footer section p {
@@ -7758,12 +7758,12 @@ nav a:hover {
 }
 
 @media (max-width: 1340px) {
-  #doczyk img {
-    right: 23.5%
+  #design {
+    width: 350px;
   }
 
-  #design {
-    width: 23%
+  .social-icons {
+    margin-right: 190px;
   }
 
   footer {
@@ -7771,15 +7771,11 @@ nav a:hover {
   }
 
   footer section {
-    width: 23%
+    width: 350px;
   }
 
   footer section p {
     width: 75%
-  }
-
-  footer .hidden {
-    display: none
   }
 }
 
@@ -7789,15 +7785,11 @@ nav a:hover {
   }
 
   footer section {
-    width: 23%
+    width: 350px;
   }
 
   footer section p {
     width: 75%
-  }
-
-  footer .hidden {
-    display: none
   }
 }
 
@@ -7827,20 +7819,17 @@ nav a:hover {
 }
 
 @media (max-width: 800px) {
-  #logo {
-    width: 100px
-  }
-
-  #doczyk img {
-    right: 230px
-  }
 
   #design {
-    width: 225px
+    width: 270px;
   }
 
   .rmm-toggled {
     z-index: 9999
+  }
+
+  .social-icons {
+    margin-right: 110px;
   }
 
   body article {
@@ -7850,7 +7839,7 @@ nav a:hover {
   }
 
   footer section {
-    width: 225px
+    width: 270px
   }
 
   .subfooter .widget-container {
@@ -7892,34 +7881,21 @@ nav a:hover {
 
 @media (max-width: 480px) {
   header {
-    height: 60px
-  }
-
-  #logo {
     height: 60px;
-    width: 45%
-  }
-
-  #logo img {
-    height: 60px;
-    width: 100px
-  }
-
-  #doczyk img {
-    right: 118px;
-    height: 20px;
-    width: 102px
   }
 
   #design {
     height: 60px;
-    width: 115px
+    width: 100%;
   }
 
   #design img {
-    height: 20px;
-    width: 99px;
-    top: 0
+    display:block;
+    height: auto;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .rmm {
@@ -7947,16 +7923,21 @@ nav a:hover {
   }
 
   .hide-for-mobile {
-    display: none
+    display: none;
   }
 
   footer section {
-    width: 175px
+    width: 100%;
+  }
+
+  footer section p {
+    width: 100%;
+    text-align: center;
   }
 
   .subfooter .widget-container .widget {
     border: none;
-    width: 100%
+    width: 100%;
   }
 }
 

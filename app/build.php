@@ -33,6 +33,7 @@ if ( $debug_mode == true ) ini_set('display_errors', 1);
  */
 if ( PHP_VER < '5.3.2' ) {
   // TODO: Use spl_autoloader which was added in php 5.1.2
+  require_once( $path['app'] . '/libs/Environment.php' );
   require_once( $path['app'] . '/libs/FileHandler.php' );
   require_once( $path['app'] . '/libs/HTTP.php' );
   require_once( $path['app'] . '/libs/HTML.php' );
@@ -45,6 +46,7 @@ else {
   require_once( $path['base'] . '/vendor' . '/autoload.php' );
 }
 
+$env = new Environment( $environment );
 $url = new HTTP();
 $html = new HTML();
 $helper = new Helper();

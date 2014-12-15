@@ -1,7 +1,5 @@
 <?php
 
-$debug_mode = true;  // Turn this to true to enable php errors on production servers
-
 /*
  * Used to create fill in hte <title> tag as well as other <meta> tags.
  */
@@ -52,3 +50,10 @@ $page_meta = array(
  * If a plugin is not within this array it will not be loaded.
  */
 $active_plugins = array( 'FluxSlider', 'MixItUp' );
+
+/* ==============================
+ * ADVANCED SETTINGS
+ * ============================== */
+$environment = ''; // Only change this if you know the implications
+$debug_mode = '';  // Turn this to true to enable php errors on production servers
+$development_mode = ''; // Turn this to true to use non-minified resources (css | js)

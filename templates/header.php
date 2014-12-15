@@ -37,7 +37,11 @@
 <?php endif; ?>
 
     <!-- Main -->
+    <?php if ( $env->get('ENV') == 'development' ) : ?>
+    <?php $html->css( 'css/style.css' ); ?>
+    <?php else : ?>
     <?php $html->css( 'css/style.min.css' ); ?>
+    <?php endif; ?>
 
 <?php if ( $url->is_page( 'portfolio' ) && in_array( 'MixItUp', $active_plugins ) ) : ?>
     <!-- STYLES FOR EFFECTS -->
