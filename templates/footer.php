@@ -10,14 +10,14 @@
         </div><!-- .widget.contact-info -->
         <div class="widget fancybox">
           <h3>Featured Works</h3>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/1.jpg"><?php $html->img( 'img/portfolio/1-thumb.jpg', 'CBB Logo', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/2.jpg"><?php $html->img( 'img/portfolio/2-thumb.jpg', 'Stem Cell Illustration', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/3.jpg"><?php $html->img( 'img/portfolio/3-thumb.jpg', 'Grosvenor Interiors Logo', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/4.jpg"><?php $html->img( 'img/portfolio/4-thumb.jpg', 'Human Brain Illustration', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/5.jpg"><?php $html->img( 'img/portfolio/5-thumb.jpg', 'Knee Joint Illustration', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/6.jpg"><?php $html->img( 'img/portfolio/6-thumb.jpg', 'Margallery Logo', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/7.jpg"><?php $html->img( 'img/portfolio/7-thumb.jpg', 'NeuroGel Logo', array( 'class' => 'thumbs' ) ); ?></a>
-          <a href="<?php echo $site['url']; ?>assets/img/portfolio/8.jpg"><?php $html->img( 'img/portfolio/8-thumb.jpg', 'Rat Brain Illustration', array( 'class' => 'thumbs' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/1.jpg"><?php $html->img( 'img/portfolio/1-thumb.jpg', 'CBB Logo', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/2.jpg"><?php $html->img( 'img/portfolio/2-thumb.jpg', 'Stem Cell Illustration', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/3.jpg"><?php $html->img( 'img/portfolio/3-thumb.jpg', 'Grosvenor Interiors Logo', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/4.jpg"><?php $html->img( 'img/portfolio/4-thumb.jpg', 'Human Brain Illustration', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/5.jpg"><?php $html->img( 'img/portfolio/5-thumb.jpg', 'Knee Joint Illustration', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/6.jpg"><?php $html->img( 'img/portfolio/6-thumb.jpg', 'Margallery Logo', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/7.jpg"><?php $html->img( 'img/portfolio/7-thumb.jpg', 'NeuroGel Logo', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
+          <a href="<?php echo $site['url']; ?>assets/img/portfolio/8.jpg"><?php $html->img( 'img/portfolio/8-thumb.jpg', 'Rat Brain Illustration', array( 'class' => 'thumbs', 'width'=> '140', 'height'=> '140' ) ); ?></a>
         </div><!-- .widget fancybox -->
         <div class="widget">
           <h3>Latest News</h3>

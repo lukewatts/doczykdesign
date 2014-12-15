@@ -203,7 +203,7 @@
 
       <section id="design">
         <div>
-          <?php $html->img( 'img/doczyk-design-logo.png', 'Doczyk Design Logo' ); ?>
+          <?php $html->img( 'img/doczyk-design-logo.png', 'Doczyk Design Logo', array( 'width' => '640', 'height' => '190' )); ?>
         </div>
       </section><!-- #design -->
     </header>
