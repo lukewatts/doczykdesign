@@ -6310,10 +6310,15 @@ header {
 }
 
 #design img {
+  /* Dimensions */
   height: auto;
   width: 220px;
+
+  /* Positioning */
+  display: block;
   margin-top: 15px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav {
@@ -7890,12 +7895,9 @@ nav a:hover {
   }
 
   #design img {
-    display:block;
     height: auto;
     width: 130px;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .rmm {

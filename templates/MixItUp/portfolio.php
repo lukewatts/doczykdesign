@@ -34,24 +34,24 @@ $mixitup->portfolio_items = array(
     'alt'       => 'Disc Pain Logo',
     'category'  => 'logos'
   ),
-  array(
-    'name'      => 'Maria-Curie-Sklodowska',
-    'src'       => 'img/portfolio/12.jpg',
-    'alt'       => 'Maria-Curie-Sklodowska Infographic',
-    'category'  => 'infographics'
-  ),
+//  array(
+//    'name'      => 'Maria-Curie-Sklodowska',
+//    'src'       => 'img/portfolio/12.jpg',
+//    'alt'       => 'Maria-Curie-Sklodowska Infographic',
+//    'category'  => 'infographics'
+//  ),
   array(
     'name'      => 'Achilles Heel Illustration',
     'src'       => 'img/portfolio/11.jpg',
     'alt'       => 'Achilles Heel Illustration',
     'category'  => 'illustrations'
   ),
-  array(
-    'name'      => 'Via Travel Logo',
-    'src'       => 'img/portfolio/10.jpg',
-    'alt'       => 'Via Travel Logo',
-    'category'  => 'logos'
-  ),
+//  array(
+//    'name'      => 'Via Travel Logo',
+//    'src'       => 'img/portfolio/10.jpg',
+//    'alt'       => 'Via Travel Logo',
+//    'category'  => 'logos'
+//  ),
   array(
     'name'      => 'HydroGel Infographic',
     'src'       => 'img/portfolio/21.jpg',
@@ -250,12 +250,12 @@ $mixitup->portfolio_items = array(
     'alt'       => 'Figure 2.1 DT 1 (Very Dense)',
     'category'  => 'illustration'
   ),
-  array(
-    'name'      => 'Figure One V2',
-    'src'       => 'img/portfolio/figure-1-ver-2-550x536.jpg',
-    'alt'       => 'Figure One V2 infographic',
-    'category'  => 'infographics'
-  ),
+//  array(
+//    'name'      => 'Figure One V2',
+//    'src'       => 'img/portfolio/figure-1-ver-2-550x536.jpg',
+//    'alt'       => 'Figure One V2 infographic',
+//    'category'  => 'infographics'
+//  ),
   array(
     'name'      => 'NFB - DNA Chain Poster',
     'src'       => 'img/portfolio/dna-chain-v2-550x778.jpg',
