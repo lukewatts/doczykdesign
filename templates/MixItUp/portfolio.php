@@ -131,154 +131,184 @@ $mixitup->portfolio_items = array(
     'category'  => 'logos'
   ),
   array(
-      'name'      => 'Plakat Portugalski',
-      'src'       => 'img/portfolio/plakat-portugalski-842x1191.jpg',
-      'alt'       => 'Plakat Portugalski',
-      'category'  => 'posters'
+    'name'      => 'Plakat Portugalski',
+    'src'       => 'img/portfolio/plakat-portugalski-842x1191.jpg',
+    'alt'       => 'Plakat Portugalski',
+    'category'  => 'posters'
   ),
   array(
-      'name'      => 'Okładka Na Tomik',
-      'src'       => 'img/portfolio/okladka-na-tomik-ver4-680x482.jpg',
-      'alt'       => 'Okładka Na Tomik',
-      'category'  => 'publications'
+    'name'      => 'Okładka Na Tomik',
+    'src'       => 'img/portfolio/okladka-na-tomik-ver4-680x482.jpg',
+    'alt'       => 'Okładka Na Tomik',
+    'category'  => 'publications'
   ),
   array(
-      'name'      => 'Knocknacarra National School',
-      'src'       => 'img/portfolio/knocknacarra-educate-together-national-school-logo-english-550x400.jpg',
-      'alt'       => 'Knocknacarra Educate Together National School Logo',
-      'category'  => 'logos'
+    'name'      => 'Knocknacarra National School',
+    'src'       => 'img/portfolio/knocknacarra-educate-together-national-school-logo-english-550x400.jpg',
+    'alt'       => 'Knocknacarra Educate Together National School Logo',
+    'category'  => 'logos'
   ),
   array(
-      'name'      => 'Presentation B',
-      'src'       => 'img/portfolio/presentation-b-550x494.jpg',
-      'alt'       => 'Presentation B',
-      'category'  => 'infographics'
+    'name'      => 'Presentation B',
+    'src'       => 'img/portfolio/presentation-b-550x494.jpg',
+    'alt'       => 'Presentation B',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Musculoskeletal V3',
-      'src'       => 'img/portfolio/musculoskeletal-3-550x642.jpg',
-      'alt'       => 'Musculoskeletal Version 3 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Musculoskeletal V3',
+    'src'       => 'img/portfolio/musculoskeletal-3-550x642.jpg',
+    'alt'       => 'Musculoskeletal Version 3 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Medical Devices Week Poster',
-      'src'       => 'img/portfolio/medical-devices-week-poster-with-colour-2-550x778.jpg',
-      'alt'       => 'Medical Devices Week Poster with Colour 2',
-      'category'  => 'posters'
+    'name'      => 'Medical Devices Week Poster',
+    'src'       => 'img/portfolio/medical-devices-week-poster-with-colour-2-550x778.jpg',
+    'alt'       => 'Medical Devices Week Poster with Colour 2',
+    'category'  => 'posters'
   ),
   array(
-      'name'      => 'Insuline Production Device V5',
-      'src'       => 'img/portfolio/insuline-production-device-5-550x702.jpg',
-      'alt'       => 'Insuline Production Device V5',
-      'category'  => 'infographics'
+    'name'      => 'Insuline Production Device V5',
+    'src'       => 'img/portfolio/insuline-production-device-5-550x702.jpg',
+    'alt'       => 'Insuline Production Device V5',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Human Brain Diagram',
-      'src'       => 'img/portfolio/human-brain-image-one-550x453.jpg',
-      'alt'       => 'Human Brain Diagram',
-      'category'  => 'infographics'
+    'name'      => 'Human Brain Diagram',
+    'src'       => 'img/portfolio/human-brain-image-one-550x453.jpg',
+    'alt'       => 'Human Brain Diagram',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Heart Diagram',
-      'src'       => 'img/portfolio/heart-diagram-550x420.jpg',
-      'alt'       => 'Heart Diagram',
-      'category'  => 'infographics'
+    'name'      => 'Heart Diagram',
+    'src'       => 'img/portfolio/heart-diagram-550x420.jpg',
+    'alt'       => 'Heart Diagram',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Healing Process',
-      'src'       => 'img/portfolio/healing-process-3-together-832x400.jpg',
-      'alt'       => 'Healing Process Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Healing Process',
+    'src'       => 'img/portfolio/healing-process-3-together-832x400.jpg',
+    'alt'       => 'Healing Process Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One V2B2',
-      'src'       => 'img/portfolio/figure-one-ver-2B2-550x435.jpg',
-      'alt'       => 'Figure One V2B2 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One V2B2',
+    'src'       => 'img/portfolio/figure-one-ver-2B2-550x435.jpg',
+    'alt'       => 'Figure One V2B2 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One V2',
-      'src'       => 'img/portfolio/figure-one-ver-2-550x435.jpg',
-      'alt'       => 'Figure One V2 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One V2',
+    'src'       => 'img/portfolio/figure-one-ver-2-550x435.jpg',
+    'alt'       => 'Figure One V2 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One B1',
-      'src'       => 'img/portfolio/figure-one-ver-B1-550x242.jpg',
-      'alt'       => 'Figure One B1 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One B1',
+    'src'       => 'img/portfolio/figure-one-ver-B1-550x242.jpg',
+    'alt'       => 'Figure One B1 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One V3',
-      'src'       => 'img/portfolio/Figure-one-v3-550x905.jpg',
-      'alt'       => 'Figure One V3 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One V3',
+    'src'       => 'img/portfolio/Figure-one-v3-550x905.jpg',
+    'alt'       => 'Figure One V3 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One V2',
-      'src'       => 'img/portfolio/figure-one-v2-550x198.jpg',
-      'alt'       => 'Figure One V2 Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One V2',
+    'src'       => 'img/portfolio/figure-one-v2-550x198.jpg',
+    'alt'       => 'Figure One V2 Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure One',
-      'src'       => 'img/portfolio/figure-one-550x198.jpg',
-      'alt'       => 'Figure One Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One',
+    'src'       => 'img/portfolio/figure-one-550x198.jpg',
+    'alt'       => 'Figure One Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure 1 for Book Chapter',
-      'src'       => 'img/portfolio/figure-for-book-chapter-550x444.jpg',
-      'alt'       => 'Figure 1 for Book Chapter Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure 1 for Book Chapter',
+    'src'       => 'img/portfolio/figure-for-book-chapter-550x444.jpg',
+    'alt'       => 'Figure 1 for Book Chapter Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Curam Research Platforms',
-      'src'       => 'img/portfolio/curam-research-platforms-figure-2k-mb-550x188.jpg',
-      'alt'       => 'Curam Research Platforms Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Curam Research Platforms',
+    'src'       => 'img/portfolio/curam-research-platforms-figure-2k-mb-550x188.jpg',
+    'alt'       => 'Curam Research Platforms Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Figure 2.1 DT1',
-      'src'       => 'img/portfolio/figure-2.1-dt-1-515x500.jpg',
-      'alt'       => 'Figure 2.1 DT1 Illustration',
-      'category'  => 'illustration'
+    'name'      => 'Figure 2.1 DT1',
+    'src'       => 'img/portfolio/figure-2.1-dt-1-515x500.jpg',
+    'alt'       => 'Figure 2.1 DT1 Illustration',
+    'category'  => 'illustration'
   ),
   array(
-      'name'      => 'Figure 2.1 DT 1 (Very Dense)',
-      'src'       => 'img/portfolio/figure-2.1-dt-1-very-dense-515x500.jpg',
-      'alt'       => 'Figure 2.1 DT 1 (Very Dense)',
-      'category'  => 'illustration'
+    'name'      => 'Figure 2.1 DT 1 (Very Dense)',
+    'src'       => 'img/portfolio/figure-2.1-dt-1-very-dense-515x500.jpg',
+    'alt'       => 'Figure 2.1 DT 1 (Very Dense)',
+    'category'  => 'illustration'
   ),
   array(
-      'name'      => 'Figure One V2',
-      'src'       => 'img/portfolio/figure-1-ver-2-550x536.jpg',
-      'alt'       => 'Figure One V2 infographic',
-      'category'  => 'infographics'
+    'name'      => 'Figure One V2',
+    'src'       => 'img/portfolio/figure-1-ver-2-550x536.jpg',
+    'alt'       => 'Figure One V2 infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'NFB - DNA Chain Poster',
-      'src'       => 'img/portfolio/dna-chain-v2-550x778.jpg',
-      'alt'       => 'NFB - DNA Chain Poster',
-      'category'  => 'poster'
+    'name'      => 'NFB - DNA Chain Poster',
+    'src'       => 'img/portfolio/dna-chain-v2-550x778.jpg',
+    'alt'       => 'NFB - DNA Chain Poster',
+    'category'  => 'posters'
   ),
   array(
-      'name'      => 'Curam Logo',
-      'src'       => 'img/portfolio/curam-logo-large-550x361.jpg',
-      'alt'       => 'Curam Logo',
-      'category'  => 'logos'
+    'name'      => 'Curam Logo',
+    'src'       => 'img/portfolio/curam-logo-large-550x361.jpg',
+    'alt'       => 'Curam Logo',
+    'category'  => 'logos'
   ),
   array(
-      'name'      => 'Curam Infographic',
-      'src'       => 'img/portfolio/curam-industry-infographic-550x419.jpg',
-      'alt'       => 'Curam Infographic',
-      'category'  => 'infographics'
+    'name'      => 'Curam Infographic',
+    'src'       => 'img/portfolio/curam-industry-infographic-550x419.jpg',
+    'alt'       => 'Curam Infographic',
+    'category'  => 'infographics'
   ),
   array(
-      'name'      => 'Curam Back Page',
-      'src'       => 'img/portfolio/curam-back-page-550x778.jpg',
-      'alt'       => 'Curam Back Page',
-      'category'  => 'publications'
+    'name'      => 'Curam Back Page',
+    'src'       => 'img/portfolio/curam-back-page-550x778.jpg',
+    'alt'       => 'Curam Back Page',
+    'category'  => 'publications'
+  ),
+  array(
+    'name'      => 'Chimera Art Exhibition Poster',
+    'src'       => 'img/portfolio/chimera-art-exbition-poster-550x778.jpg',
+    'alt'       => 'Chimera Art Exhibition Poster',
+    'category'  => 'posters'
+  ),
+  array(
+    'name'      => 'Bioscience Logo V10',
+    'src'       => 'img/portfolio/bioscience-logo-v10-549x490.jpg',
+    'alt'       => 'Bioscience Logo V10',
+    'category'  => 'logos'
+  ),
+  array(
+    'name'      => 'Bioscience Logo',
+    'src'       => 'img/portfolio/bioscience-logo-550x389.jpg',
+    'alt'       => 'Bioscience Logo',
+    'category'  => 'logos'
+  ),
+  array(
+    'name'      => 'AFPM 2015 Pull-up Banner',
+    'src'       => 'img/portfolio/afpm-2015-pull-up-banner-550x1408.jpg',
+    'alt'       => 'Advanced Functional Polymers for Medicine 2015 Pull-Up Banner',
+    'category'  => 'posters'
+  ),
+  array(
+    'name'      => 'AFPM 2015 Poster',
+    'src'       => 'img/portfolio/afpm-2015-pp-version-b-548x776.jpg',
+    'alt'       => 'Advanced Functional Polymers for Medicine 2015 Poster',
+    'category'  => 'posters'
   ),
 
 );
