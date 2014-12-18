@@ -4,7 +4,7 @@ class Meta {
 
   protected $http;
 
-  // TODO: Write a make_title() method to allow easy "on-the-fly" formatting / customizing of get_title()
+  // TODO: make_title() method to allow easy "on-the-fly" formatting / customizing of get_title()
   
   /**
    * __construct Dependency Injection of HTTP class

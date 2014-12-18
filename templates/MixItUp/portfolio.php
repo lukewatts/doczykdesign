@@ -275,6 +275,48 @@ $mixitup->portfolio_items = array(
     'category'  => 'infographics'
   ),
   array(
+    'name'      => 'EKG Ireland',
+    'src'       => 'img/portfolio/ekg-Ireland-2-518.jpg',
+    'alt'       => 'EKG Ireland Illustration',
+    'category'  => 'illustrations',
+  ),
+  array(
+    'name'      => 'Figure 1B',
+    'src'       => 'img/portfolio/figure1b-550x479.jpg',
+    'alt'       => 'Figure 1B Infographic',
+    'category'  => 'infographics',
+  ),
+  array(
+    'name'      => 'Figure Uno 2B',
+    'src'       => 'img/portfolio/figure-uno-ver2b-550x518.jpg',
+    'alt'       => 'Figure Uno 2B Infographic',
+    'category'  => 'infographics',
+  ),
+  array(
+    'name'      => 'Hydroactina',
+    'src'       => 'img/portfolio/hydroactinia-550x411.jpg',
+    'alt'       => 'Hydroactinia Illustration',
+    'category'  => 'illustrations',
+  ),
+  array(
+    'name'      => 'Lower Back Pain',
+    'src'       => 'img/portfolio/lower-back-pain-550x378.jpg',
+    'alt'       => 'Lower Back Pain Illustration',
+    'category'  => 'illustrations',
+  ),
+  array(
+    'name'      => 'Nematostella',
+    'src'       => 'img/portfolio/nematostella-550.jpg',
+    'alt'       => 'Nematostella Illustration',
+    'category'  => 'illustrations',
+  ),
+  array(
+    'name'      => 'Schematic 2B',
+    'src'       => 'img/portfolio/schematic-2b-600x385.jpg',
+    'alt'       => 'Schematic 2B Infographic',
+    'category'  => 'infographics',
+  ),
+  array(
     'name'      => 'Curam Back Page',
     'src'       => 'img/portfolio/curam-back-page-550x778.jpg',
     'alt'       => 'Curam Back Page',

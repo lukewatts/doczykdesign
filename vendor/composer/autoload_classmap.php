@@ -11,7 +11,7 @@ return array(
     'FileHandler' => $baseDir . '/app/libs/FileHandler.php',
     'HTML' => $baseDir . '/app/libs/HTML.php',
     'HTTP' => $baseDir . '/app/libs/HTTP.php',
-    'Helper' => $baseDir . '/app/libs/Helpers.php',
+    'Helper' => $baseDir . '/app/libs/Helper.php',
     'Meta' => $baseDir . '/app/libs/Meta.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',

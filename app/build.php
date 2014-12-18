@@ -5,13 +5,15 @@
  * @author  Luke Watts <luke@luke-watts.com>
  * @author  Affinity4 <info@affinity4.ie>
  * @link    http://affinity4.ie/
- * @version 2.1.0
+ * @version 2.2.0
  */
 
 /**
  * @since 1.2.0
  */
-define( 'PHP_VER', phpversion() );
+if ( !defined( 'PHP_VERSION' ) ) {
+  define('PHP_VERSION', phpversion());
+}
 
 // Setup paths for use through application
 require_once( 'paths.php' );
@@ -31,20 +33,18 @@ if ( $debug_mode == true ) ini_set('display_errors', 1);
 /**
  * @since 1.2.0
  */
-if ( PHP_VER < '5.3.2' ) {
-  // TODO: Use spl_autoloader which was added in php 5.1.2
-  require_once( $path['app'] . '/libs/Environment.php' );
-  require_once( $path['app'] . '/libs/FileHandler.php' );
-  require_once( $path['app'] . '/libs/HTTP.php' );
-  require_once( $path['app'] . '/libs/HTML.php' );
-  require_once( $path['app'] . '/libs/Helpers.php' );
-  require_once( $path['app'] . '/libs/Meta.php' );
-  require_once( $path['app'] . '/libs/Plugin.php' );
-  require_once( $path['app'] . '/libs/ErrorHandler.php' );
-  require_once( $path['app'] . '/libs/Validator.php' );
+if ( PHP_VERSION < '5.3.2' ) {
+
+  /**
+   * @since 2.2.0
+   */
+  require_once( 'autoload.php' );
+
 }
 else {
+
   require_once( $path['base'] . '/vendor' . '/autoload.php' );
+
 }
 
 $env = new Environment( $environment );

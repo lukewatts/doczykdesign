@@ -116,6 +116,7 @@ class HTTP {
    * 
    * @param  string $format Format the string to be returned
    * @return string
+   * @since  1.1.0
    */
   public function get_page_name( $format = null ) {
 

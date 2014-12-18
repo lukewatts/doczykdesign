@@ -9,7 +9,7 @@ if ( !defined('__DIR__') ) define( '__DIR__', dirname( __FILE__ ) );
 
 /**
  * Used to create paths for includes and requires
- * 
+ *
  * @var array
  * @since 1.1.0
  */

@@ -1,6 +1,8 @@
 <?php
-/*
+/**
  * URL helpers for dynamic URL generation
+ *
+ * @since 1.1.0
  */
 
 /**
